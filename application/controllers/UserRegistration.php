@@ -44,7 +44,7 @@ class UserRegistration extends REST_Controller {
             $data['error_msg'] = $this->session->userdata('error_msg');
             $this->session->unset_userdata('error_msg');
         }
-        // if($this->input->post('loginSubmit')){
+        // if($this->input->post('loginSubmit')){ 
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
             $this->form_validation->set_rules('password', 'password', 'required');
             if ($this->form_validation->run() == true) {
@@ -57,6 +57,7 @@ class UserRegistration extends REST_Controller {
                 );
                  $this->load->model('User_login');
                 $checkLogin = $this->User_login->getRows($con);
+                 $data['loginData']=$checkLogin;
                 if($checkLogin){
                     $this->session->set_userdata('isUserLoggedIn',TRUE);
                     $this->session->set_userdata('userId',$checkLogin['id']);
@@ -69,6 +70,7 @@ class UserRegistration extends REST_Controller {
             }
         // }
         //load the view
+
              $this->response($data, REST_Controller::HTTP_OK);
     }
     
