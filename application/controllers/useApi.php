@@ -1,7 +1,8 @@
 <?php 
+//************Start for  User ************************
 // for get user information 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/UserRegistration/users';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/UserRegistration/users';
 
 //API key
 $apiKey = 'syflex1234';
@@ -24,10 +25,9 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-// for insert 
-
+// for insert into user database
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/UserRegistration/users';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/UserRegistration/users';
 
 //API key
 $apiKey = 'syflex1234';
@@ -61,9 +61,9 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 
-// for update
+// for update user
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/UserRegistration/users';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/UserRegistration/users';
 
 //API key
 $apiKey = 'syflex1234';
@@ -94,13 +94,15 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($userData));
 
 $result = curl_exec($ch);
 
-//for delete
+
 
 //close cURL resource
 curl_close($ch);
 
+
+//for delete user
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/UserRegistration/users/1';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/UserRegistration/users/1';
 
 //API key
 $apiKey = 'syflex1234';
@@ -128,7 +130,7 @@ curl_close($ch);
 // for Login 
 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/UserRegistration/login';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/UserRegistration/login';
 
 //API key
 $apiKey = 'syflex1234';
@@ -158,16 +160,16 @@ $result = curl_exec($ch);
 
 //close cURL resource
 curl_close($ch);
+//************end for  User ************************
 
 
-
-
+//************Start for Indivisual User ************************
 
 //Indivisual User Detail
 
-// for get user information 
+// for get indiviual user information 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
 
 //API key
 $apiKey = 'syflex1234';
@@ -190,10 +192,9 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-// for insert 
-
+// for insert  indiviual user information 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
 
 //API key
 $apiKey = 'syflex1234';
@@ -228,9 +229,9 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 
-// for update
+// for update  indiviual user information 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/IndivisualDetail/indivisualDetail';
 
 //API key
 $apiKey = 'syflex1234';
@@ -265,15 +266,15 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-// for delete
-
-/for delete
+//for delete
 
 //close cURL resource
 curl_close($ch);
 
+
+// for delete indiviual user information 
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/IndivisualDetail/indivisualDetail/1';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/IndivisualDetail/indivisualDetail/1';
 
 //API key
 $apiKey = 'syflex1234';
@@ -296,15 +297,18 @@ $result = curl_exec($ch);
 
 //close cURL resource
 curl_close($ch);
+//************End for Indivisual Users ************************
 
 
 
-//************ for Group ************************
+
+//************start for Group ************************
 //group Detail
 
-// for get user information 
+// for get Group detail
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/GroupDetails/groupDetails';
+
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/GroupDetails/groupDetails';
 
 //API key
 $apiKey = 'syflex1234';
@@ -327,10 +331,9 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-// for insert 
-
+// for insert Group detail
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/GroupDetails/groupDetails';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/GroupDetails/groupDetails';
 
 //API key
 $apiKey = 'syflex1234';
@@ -366,9 +369,9 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 
-// for update
+// for update Group detail
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/GroupDetails/groupDetails';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/GroupDetails/groupDetails';
 
 //API key
 $apiKey = 'syflex1234';
@@ -404,15 +407,15 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-// for delete
 
-/for delete
 
 //close cURL resource
 curl_close($ch);
 
+
+//for delete Group detail
 //API URL
-$url = 'http://localhost/CodeIgniter/index.php/GroupDetails/groupDetails/1';
+$url = 'http://khantrader.in/event_management/CodeIgniter/index.php/GroupDetails/groupDetails/1';
 
 //API key
 $apiKey = 'syflex1234';
@@ -436,6 +439,6 @@ $result = curl_exec($ch);
 //close cURL resource
 curl_close($ch);
 
-//************ for Group ************************
+//************end for Group ************************
 
 
